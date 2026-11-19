@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Minik Yıldızlar Kreş, Gündüz Bakımevi ve Çocuk Kulübü</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Minik Yıldızlar, Şahinbey / Gaziantep: 2009'dan beri duyu temelli eğitim veren kreş, gündüz bakımevi ve çocuk kulübü.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: five senses under a crescent moon. Soft turquoise + pink from the school's own colours; a sensory-play explorer (görme, işitme, dokunma, koklama, tatma) is the centrepiece; groups go from stardust to comets plus the after-school club */
+:root{--bg:#fbf8f4;--paper:#ffffff;--ink:#28324a;--muted:#646b80;--teal:#33b3c4;--teal-d:#1d8392;--teal-soft:#dff3f6;--pink:#e5679a;--pink-d:#c24a7c;--pink-soft:#fce6ef;--star:#f7c548;--star-soft:#fdf1cf;--lilac:#8a74d6;--lilac-soft:#ece8fb;--green:#57ad6b;--green-soft:#e2f2e5;--orange:#f08a3c;--orange-soft:#fde9d9;--line:#ece6dd;
+--disp:'Baloo Thambi 2',system-ui,sans-serif;--body:'Nunito',system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.num{font-variant-numeric:tabular-nums}
+.ph{background:var(--star);color:var(--ink);border-radius:6px;padding:0 6px}
+
+.preview{background:var(--ink);color:#e4e8f3;font-size:13px}
+.preview .wrap{display:flex;justify-content:space-between;gap:6px 16px;flex-wrap:wrap;padding-block:8px}
+.preview b{color:var(--star)}
+
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:50px;height:50px;flex:none}
+.logo b{font-family:var(--disp);font-weight:800;font-size:1.6rem;line-height:1;display:block}
+.logo b span:first-child{color:var(--teal)}.logo b span:last-child{color:var(--pink)}
+.logo small{font-size:11.5px;font-weight:800;color:var(--muted);letter-spacing:.06em}
+.nl{display:flex;gap:22px;font-weight:800;font-size:15px;align-items:center}
+.nl a:not(.btn){text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;background:var(--pink);color:#fff;text-decoration:none;font:inherit;font-weight:800;font-size:16px;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 4px 0 var(--pink-d)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--pink-d)}
+.btn.t{background:var(--teal);box-shadow:0 4px 0 var(--teal-d)}
+.btn.lt{background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+
+/* hero */
+.hero{padding-block:24px 70px;position:relative;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.hg>*{min-width:0}
+.since{display:inline-flex;align-items:center;gap:10px;background:var(--teal-soft);color:var(--teal-d);font-weight:800;font-size:14px;padding:6px 16px 6px 6px;border-radius:999px}
+.since b{background:var(--teal);color:#fff;border-radius:999px;padding:2px 10px;font-family:var(--disp);font-size:15px}
+.hero h1{font-size:clamp(2.6rem,6.6vw,5rem);margin-top:16px}
+.hero h1 span{color:var(--pink)}
+.hero .s{font-size:1.15rem;color:var(--muted);margin-top:18px;max-width:50ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.three{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.three span{font-weight:800;font-size:14px;padding:6px 14px;border-radius:12px;background:var(--b);color:var(--c)}
+.sky{position:relative;max-width:100%}
+.sky svg{width:100%;height:auto;display:block}
+.tw{animation:tw 2.6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes tw{50%{transform:scale(.8);opacity:.6}}
+
+section{padding-block:clamp(56px,8vw,96px)}
+.head{display:grid;gap:10px;margin-bottom:34px;max-width:62ch}
+.head h2{font-size:clamp(2.1rem,4.8vw,3.3rem)}
+.head p{color:var(--muted);font-size:1.05rem}
+.eb{font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}
+
+/* senses explorer */
+.senses{background:var(--paper);border-block:1px solid var(--line)}
+.sx{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.sx>*{min-width:0}
+.stabs{display:grid;gap:10px}
+.stab{font:inherit;display:flex;gap:12px;align-items:center;border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:20px;padding:10px 18px 10px 10px;cursor:pointer;text-align:left;font-weight:800;font-size:16px;min-width:210px}
+.stab i{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-style:normal;font-size:22px;background:var(--b)}
+.stab[aria-pressed="true"]{border-color:var(--c);background:var(--b)}
+.scard{border-radius:30px;padding:30px;background:var(--b);display:grid;gap:16px;min-height:330px;align-content:start}
+.scard .top{display:flex;gap:16px;align-items:center}
+.scard .top i{width:72px;height:72px;border-radius:22px;background:var(--paper);display:grid;place-items:center;font-style:normal;font-size:38px}
+.scard h3{font-size:2.2rem;color:var(--c)}
+.scard .what{font-size:1.1rem}
+.acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.acts div{background:var(--paper);border-radius:18px;padding:14px;display:grid;gap:4px;align-content:start}
+.acts b{font-size:15px}
+.acts span{font-size:14px;color:var(--muted)}
+.gain{font-size:15px;color:var(--ink);background:rgba(255,255,255,.7);border-radius:14px;padding:10px 14px}
+.gain b{color:var(--c)}
+
+/* groups */
+.groups{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.gr{background:var(--paper);border:2px solid var(--line);border-radius:24px;padding:20px;display:grid;gap:8px;align-content:start}
+.gr svg{width:50px;height:50px}
+.gr small{font-weight:800;font-size:12.5px;color:var(--c);letter-spacing:.04em}
+.gr h3{font-size:1.4rem}
+.gr p{color:var(--muted);font-size:14.5px}
+.gr.club{background:var(--lilac-soft);border-color:transparent}
+.law{margin-top:18px;font-size:14px;color:var(--muted);max-width:80ch}
+
+/* finder */
+.finder{background:var(--teal-soft)}
+.finder .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.finder .wrap>*{min-width:0}
+.pick{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.pick label{display:grid;gap:6px;font-weight:800;font-size:14px;color:var(--muted)}
+select,input,textarea{font:inherit;font-size:16px;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);width:100%;min-width:0}
+select:focus,input:focus,textarea:focus{border-color:var(--teal);outline:none}
+.pick select{width:auto;min-width:130px}
+.res{background:var(--paper);border-radius:30px;padding:30px;display:grid;gap:10px;min-height:250px;align-content:center;box-shadow:0 10px 0 var(--teal)}
+.res .age{font-weight:800;color:var(--muted);font-size:15px}
+.res .big{font-family:var(--disp);font-size:clamp(2.2rem,5vw,3rem);line-height:1}
+.res .type{justify-self:start;font-weight:800;font-size:13px;padding:4px 12px;border-radius:999px;background:var(--pink-soft);color:var(--pink-d)}
+.res p{color:var(--muted)}
+.res .btn{justify-self:start;white-space:normal}
+
+/* day */
+.dayg{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.dayg>*{min-width:0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tab{font:inherit;font-weight:800;font-size:15px;border:2px solid var(--teal);background:var(--paper);color:var(--teal-d);border-radius:999px;padding:9px 16px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--teal);color:#fff}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.tl li{display:grid;grid-template-columns:66px 1fr;gap:14px;align-items:center;background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:11px 16px}
+.tl time{font-family:var(--disp);font-weight:800;color:var(--pink);font-size:1.15rem}
+.tl b{display:block;font-weight:800}
+.tl span{color:var(--muted);font-size:15px}
+
+.menuw{background:var(--star-soft)}
+.menu{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.md{background:var(--paper);border-radius:20px;padding:16px;display:grid;gap:8px;align-content:start}
+.md em{font-style:normal;font-family:var(--disp);font-weight:800;font-size:1.15rem;color:var(--teal-d)}
+.md div{display:grid;gap:1px}
+.md small{font-size:11.5px;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.md span{font-size:14.5px}
+.mnote{margin-top:14px;color:var(--muted);font-size:14.5px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{border-radius:28px;padding:28px;display:grid;gap:14px;align-content:start}
+.box.a{background:var(--pink-soft)}.box.b{background:var(--green-soft)}
+.box h3{font-size:1.9rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px}
+.steps li:before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;font-weight:800}
+.steps b{display:block}.steps span{color:var(--muted);font-size:15px}
+.docs{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.docs label{display:flex;gap:12px;align-items:flex-start;background:var(--paper);border-radius:14px;padding:12px 14px;cursor:pointer}
+.docs input{width:20px;height:20px;margin-top:3px;accent-color:var(--green);flex:none;padding:0}
+.docs label.on span{text-decoration:line-through;color:var(--muted)}
+.dc{font-size:14px;font-weight:800;color:var(--muted)}
+
+.faq{max-width:820px}
+.faq details{background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:16px 20px;margin-bottom:10px}
+.faq summary{font-family:var(--disp);font-weight:800;font-size:1.3rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--pink);font-size:1.5rem;line-height:1}
+.faq details[open] summary:after{content:"–"}
+.faq p{color:var(--muted);margin-top:8px}
+
+.contact{background:var(--ink);color:#eef1f8}
+.cg{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start}
+.cg>*{min-width:0}
+.contact h2{font-size:clamp(2.2rem,5vw,3.5rem)}
+.contact h2 span{color:var(--star)}
+.contact .s{color:#bcc3d6;margin-top:14px;max-width:44ch}
+.contact .eb{color:var(--star)}
+.info{margin-top:24px;display:grid;border-top:1px solid #3d4763}
+.info div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-block:14px;border-bottom:1px solid #3d4763}
+.info span{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#9aa4bf}
+.info b{font-weight:700;word-break:break-word}
+.info a{color:var(--star)}
+form{background:var(--paper);color:var(--ink);border-radius:28px;padding:24px;display:grid;gap:12px}
+form h3{font-size:1.9rem}
+.f{display:grid;gap:5px}.f label{font-size:14px;font-weight:800;color:var(--muted)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kv{display:flex;gap:10px;font-size:14px;color:var(--muted);align-items:flex-start}
+.kv input{width:18px;height:18px;margin-top:3px;accent-color:var(--pink);flex:none;padding:0}
+.ok{background:var(--teal-soft);color:var(--teal-d);border-radius:14px;padding:12px 14px;font-weight:700}
+.er{color:#b23a2c;font-weight:700;font-size:14px}
+footer{background:var(--ink);color:#9aa4bf;font-size:14px;border-top:1px solid #3d4763}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:22px}
+
+@media (max-width:980px){.groups{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){
+ .hg,.finder .wrap,.dayg,.cg,.two{grid-template-columns:1fr}
+ .sx{grid-template-columns:1fr}
+ .stabs{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+ .stab{min-width:0;flex-direction:column;padding:8px 4px;font-size:12.5px;gap:4px;text-align:center}
+ .acts{grid-template-columns:1fr}
+ .groups{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nl a:not(.btn){display:none}
+ .sky{max-width:420px;margin-inline:auto}
+}
+@media (max-width:480px){.r2{grid-template-columns:1fr}.groups{grid-template-columns:1fr}.tl li{grid-template-columns:56px 1fr}.info div{grid-template-columns:1fr;gap:2px}.logo small{display:none}.nl .btn{padding:10px 16px;font-size:14px}.stab i{width:36px;height:36px;font-size:18px}.scard{padding:22px}}
+</style></head><body>
+
+<div class="preview"><div class="wrap"><span><b>Önizleme.</b> Bu sayfa Minik Yıldızlar için hazırlanmış taslak bir tasarımdır.</span><span>Sarı işaretli bilgiler sizin onayınızla güncellenecektir.</span></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="st" viewBox="0 0 40 40"><path d="M20 3l5 11 12 1.5-9 8 2.6 12L20 29.5 9.4 35.5 12 23.5l-9-8L15 14z" fill="currentColor" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<nav><div class="wrap">
+<a class="logo" href="#"><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M30 44A20 20 0 1 1 22 6a15 15 0 0 0 8 38z" fill="#33b3c4"/><use href="#st" x="26" y="6" width="16" height="16" style="color:#f7c548"/><use href="#st" x="36" y="22" width="10" height="10" style="color:#e5679a"/></svg>
+<span><b><span>minik</span> <span>yıldızlar</span></b><small>KREŞ · GÜNDÜZ BAKIMEVİ · ÇOCUK KULÜBÜ</small></span></a>
+<div class="nl"><a href="#duyular">Duyu temelli eğitim</a><a href="#gruplar">Gruplar</a><a href="#gun">Bir günümüz</a><a class="btn" href="#iletisim">Ön kayıt</a></div>
+</div></nav>
+
+<header class="hero"><div class="wrap hg">
+<div>
+<span class="since"><b>2009</b>Gaziantep'te, aynı sevgiyle</span>
+<h1>Dokunarak, duyarak, <span>keşfederek</span> büyüyoruz.</h1>
+<p class="s">Duyu temelli eğitimle çocuğunuz dünyayı beş duyusuyla tanır. Bulgur havuzundan müzik köşesine, her gün yeni bir dokunuş, yeni bir ses, yeni bir koku.</p>
+<div class="cta"><a class="btn" href="#iletisim">Okulu gezmek istiyorum</a><a class="btn lt" href="#duyular">Duyu temelli eğitim nedir?</a></div>
+<div class="three"><span style="--b:var(--teal-soft);--c:var(--teal-d)">Kreş · 0–24 ay</span><span style="--b:var(--pink-soft);--c:var(--pink-d)">Gündüz bakımevi · 25–66 ay</span><span style="--b:var(--lilac-soft);--c:var(--lilac)">Çocuk kulübü · okul sonrası</span></div>
+</div>
+<div class="sky" aria-hidden="true"><svg viewBox="0 0 420 400">
+<circle cx="210" cy="210" r="170" fill="#dff3f6"/>
+<path d="M250 340A130 130 0 1 1 196 90a98 98 0 0 0 54 250z" fill="#33b3c4"/>
+<path d="M150 200q8 10 18 0M120 230q20 18 40 0" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="112" cy="250" r="10" fill="#e5679a" opacity=".5"/>
+<g class="tw"><use href="#st" x="250" y="90" width="70" height="70" style="color:#f7c548"/></g>
+<g class="tw" style="animation-delay:.6s"><use href="#st" x="320" y="190" width="44" height="44" style="color:#e5679a"/></g>
+<g class="tw" style="animation-delay:1.2s"><use href="#st" x="276" y="270" width="54" height="54" style="color:#8a74d6"/></g>
+<g class="tw" style="animation-delay:1.8s"><use href="#st" x="70" y="60" width="30" height="30" style="color:#57ad6b"/></g>
+<g class="tw" style="animation-delay:.3s"><use href="#st" x="340" y="60" width="26" height="26" style="color:#f08a3c"/></g>
+<g transform="translate(232 214)"><circle r="14" fill="#f6d2b8"/><path d="M-14-2a14 14 0 0 1 28 0l-4-8-10-6-10 6z" fill="#5b3a29"/><rect x="-12" y="12" width="24" height="26" rx="10" fill="#e5679a"/><path d="M-12 22l-14 10M12 22l16-14" stroke="#f6d2b8" stroke-width="6" stroke-linecap="round"/></g>
+</svg></div>
+</div></header>
+
+<section class="senses" id="duyular"><div class="wrap">
+<div class="head"><p class="eb">Duyu temelli eğitim</p><h2>Beş duyu, sayısız keşif</h2><p>Bu yaşta çocuklar en iyi dokunarak, koklayarak, tadarak öğrenir. Bir duyu seçin, sınıflarımızda o duyuyu nasıl çalıştırdığımızı görün.</p></div>
+<div class="sx">
+<div class="stabs" id="stabs" role="group" aria-label="Duyu seçimi"></div>
+<div class="scard" id="scard" aria-live="polite"></div>
+</div></div></section>
+
+<section id="gruplar"><div class="wrap">
+<div class="head"><p class="eb">Gruplarımız</p><h2>Yıldız tozundan kuyruklu yıldıza</h2><p>Bebeklikten okul çağına kadar her yaşa ayrı bir grup. Okula başladıktan sonra da çocuk kulübümüzde yanınızdayız.</p></div>
+<div class="groups">
+<div class="gr" style="--c:var(--teal-d)"><svg viewBox="0 0 50 50"><g style="color:#33b3c4"><use href="#st" x="4" y="20" width="14" height="14"/><use href="#st" x="20" y="8" width="12" height="12"/><use href="#st" x="30" y="26" width="16" height="16"/></g></svg><small>0 – 24 AY · KREŞ</small><h3>Yıldız Tozları</h3><p>Evdeki uyku ve beslenme düzeni korunur. Duyu oyunlarıyla ilk keşifler.</p></div>
+<div class="gr" style="--c:var(--orange)"><svg viewBox="0 0 50 50"><use href="#st" x="8" y="8" width="34" height="34" style="color:#f08a3c"/></svg><small>25 – 36 AY</small><h3>Pırıltılar</h3><p>Tuvalet eğitimi, kendi başına yemek ve paylaşmayı öğrenme dönemi.</p></div>
+<div class="gr" style="--c:var(--green)"><svg viewBox="0 0 50 50"><g style="color:#57ad6b"><use href="#st" x="4" y="4" width="16" height="16"/><use href="#st" x="28" y="10" width="16" height="16"/><use href="#st" x="16" y="30" width="16" height="16"/></g><path d="M12 12L36 18M36 18L24 38M24 38L12 12" stroke="#57ad6b" stroke-width="1.5" fill="none"/></svg><small>37 – 48 AY</small><h3>Takımyıldızlar</h3><p>Kavramlar, sanat ve drama. Arkadaşlarla birlikte oyun kurma.</p></div>
+<div class="gr" style="--c:var(--pink-d)"><svg viewBox="0 0 50 50"><path d="M4 40L28 22" stroke="#fce6ef" stroke-width="10" stroke-linecap="round"/><path d="M8 38L28 22" stroke="#e5679a" stroke-width="4" stroke-linecap="round"/><use href="#st" x="22" y="6" width="24" height="24" style="color:#e5679a"/></svg><small>49 – 66 AY</small><h3>Kuyruklu Yıldızlar</h3><p>İlkokula hazırlık: dikkat, kalem tutma, sesler ve sayılar.</p></div>
+<div class="gr club" style="--c:var(--lilac)"><svg viewBox="0 0 50 50"><rect x="8" y="14" width="34" height="26" rx="6" fill="#8a74d6"/><path d="M18 14v-4h14v4" stroke="#8a74d6" stroke-width="3" fill="none"/><use href="#st" x="18" y="20" width="14" height="14" style="color:#f7c548"/></svg><small>OKUL ÇAĞI · ÇOCUK KULÜBÜ</small><h3>Çocuk Kulübü</h3><p>Okul sonrası ödev desteği, atölyeler ve oyun. Tatillerde de açığız.</p></div>
+</div>
+<p class="law">Kurumumuz Aile ve Sosyal Hizmetler Bakanlığı'na bağlı özel kreş, gündüz bakımevi ve çocuk kulübüdür. Grup isimleri örnektir; okulun güncel programına göre düzenlenecektir.</p>
+</div></section>
+
+<section class="finder" id="bul"><div class="wrap">
+<div><p class="eb">Grup bulucu</p><h2 style="font-size:clamp(2.1rem,4.8vw,3.3rem);margin-top:10px">Çocuğum hangi grupta?</h2><p style="color:var(--muted);margin-top:12px">Doğum ayını ve yılını seçin. Grubu çocuğunuzun bugünkü yaşına göre, ay olarak hesaplıyoruz.</p>
+<div class="pick"><label for="bm">Doğum ayı<select id="bm"></select></label><label for="by">Doğum yılı<select id="by"></select></label></div></div>
+<div class="res" id="res" aria-live="polite"></div>
+</div></section>
+
+<section id="gun"><div class="wrap dayg">
+<div><p class="eb">Bir günümüz</p><h2 style="font-size:clamp(2.1rem,4.8vw,3.3rem);margin-top:10px">Okulda bir gün</h2><p style="color:var(--muted);margin-top:14px">Grubu seçin, sabahtan akşama günün nasıl geçtiğini görün.</p>
+<div class="tabs" role="group" aria-label="Grup seçimi"><button class="tab" type="button" data-k="bebek" aria-pressed="false">Kreş · 0–24 ay</button><button class="tab" type="button" data-k="buyuk" aria-pressed="true">Gündüz bakımevi</button><button class="tab" type="button" data-k="kulup" aria-pressed="false">Çocuk kulübü</button></div></div>
+<ol class="tl" id="tl"></ol>
+</div></section>
+
+<section class="menuw" id="menu"><div class="wrap">
+<div class="head"><p class="eb">Haftalık menü</p><h2>Mutfağımızda her gün taze pişer</h2><p>Menü her pazartesi güncellenir. Alerjisi veya özel beslenme ihtiyacı olan çocuklar için ayrı tabak hazırlanır.</p></div>
+<div class="menu" id="mn"></div>
+<p class="mnote">Örnek menüdür; gerçek menü okul tarafından paylaşılır.</p>
+</div></section>
+
+<section><div class="wrap two">
+<div class="box a"><p class="eb">Uyum süreci</p><h3>İlk günler adım adım</h3>
+<ol class="steps">
+<li><p><b>Birlikte tanışma</b><span>İlk gün siz de sınıftasınız. Çocuğunuz odayı ve öğretmenini tanır.</span></p></li>
+<li><p><b>Kısa ayrılıklar</b><span>Süre her gün biraz uzar. Vedalaşmak önemlidir, gizlice ayrılmayın.</span></p></li>
+<li><p><b>İlk yemek ve uyku</b><span>Çocuğunuz hazır olduğunda öğle yemeğini ve uykusunu okulda deneriz.</span></p></li>
+<li><p><b>Tam gün</b><span>Süre çocuğa göre değişir. Acele etmeyiz, her adımı sizinle konuşuruz.</span></p></li>
+</ol></div>
+<div class="box b"><p class="eb" style="color:var(--green)">Kayıt için</p><h3>Hazırlamanız gerekenler</h3>
+<p class="dc" id="dc" aria-live="polite"></p>
+<ul class="docs" id="docs"></ul>
+<p style="font-size:14px;color:var(--muted)">İşaretledikleriniz yalnızca bu sayfada kalır, bir yere gönderilmez.</p></div>
+</div></section>
+
+<section id="sss" style="padding-top:0"><div class="wrap">
+<div class="head"><p class="eb">Sık sorulanlar</p><h2>Veliler soruyor</h2></div>
+<div class="faq">
+<details open><summary>Duyu temelli eğitim nedir?</summary><p>Çocuğun görme, işitme, dokunma, koklama ve tatma duyularını bilinçli olarak çalıştıran bir yaklaşımdır. Bulgur, su, kum ve hamur gibi malzemelerle oynayan çocuk hem el becerisini hem dikkatini hem de dilini geliştirir.</p></details>
+<details><summary>Çocuk kulübü kimler için?</summary><p>Okula başlamış çocuklar için okul sonrası ve tatil dönemlerinde ödev desteği, atölye ve oyun sunuyoruz. Saat ve ücret bilgisi için bizi arayabilirsiniz.</p></details>
+<details><summary>Duyusal oyunlarda kullanılan malzemeler güvenli mi?</summary><p>Yaşa uygun, gıda kaynaklı ve doğal malzemeler kullanılır; etkinlikler her zaman öğretmen gözetiminde yapılır. Alerjisi olan çocuklar için malzemeler ayrıca seçilir.</p></details>
+<details><summary>Kayıtlar ne zaman yapılıyor?</summary><p>Kontenjan olduğu sürece yıl içinde de kayıt alıyoruz. Ön kayıt formunu doldurduğunuzda size dönüp okul gezisi için gün belirliyoruz.</p></details>
+<details><summary>Servis hizmetiniz var mı?</summary><p><span class="ph">Servis bilgisi eklenecek</span></p></details>
+</div></div></section>
+
+<section class="contact" id="iletisim"><div class="wrap cg">
+<div><p class="eb">Ön kayıt ve okul gezisi</p><h2>Minik yıldızınız için <span>bir yer</span> ayıralım</h2><p class="s">Formu doldurun, size dönelim. Gezi yaklaşık yarım saat sürer; çocuğunuzla birlikte gelebilirsiniz.</p>
+<div class="info">
+<div><span>Adres</span><b>Bülbülzade Mah. 2 Nolu Sk. No:7/1 (Zeberced Plaza arkası), Şahinbey / Gaziantep · <a href="https://www.google.com/maps/search/?api=1&amp;query=37.025578%2C37.3367" target="_blank" rel="noopener">Haritada aç</a></b></div>
+<div><span>Telefon</span><b class="num">0342 371 75 33</b></div>
+<div><span>Saatler</span><b>Hafta içi 07.00–18.00</b></div>
+<div><span>Instagram</span><b><a href="https://www.instagram.com/gaziantepminikyildizlarkres/" target="_blank" rel="noopener">@gaziantepminikyildizlarkres</a></b></div>
+</div></div>
+<form id="f" novalidate>
+<h3>Ön kayıt formu</h3>
+<div class="r2"><div class="f"><label for="pn">Veli adı soyadı</label><input id="pn" autocomplete="name" placeholder="Adınız soyadınız"></div><div class="f"><label for="pt">Telefon</label><input id="pt" type="tel" autocomplete="tel" placeholder="05xx xxx xx xx"></div></div>
+<div class="r2"><div class="f"><label for="cn">Çocuğun adı</label><input id="cn" placeholder="Çocuğunuzun adı"></div><div class="f"><label for="cb">Doğum tarihi</label><input id="cb" type="month"></div></div>
+<div class="r2"><div class="f"><label for="cg">Grup</label><select id="cg"><option>Yıldız Tozları · 0–24 ay</option><option>Pırıltılar · 25–36 ay</option><option>Takımyıldızlar · 37–48 ay</option><option>Kuyruklu Yıldızlar · 49–66 ay</option><option>Çocuk kulübü</option><option>Emin değilim</option></select></div><div class="f"><label for="cd">Ne zaman başlamak istersiniz?</label><select id="cd"><option>Hemen</option><option>1–2 ay içinde</option><option>Yeni dönemde</option></select></div></div>
+<div class="f"><label for="nt">Notunuz</label><textarea id="nt" rows="2" placeholder="Alerji, uyum süreci veya merak ettikleriniz"></textarea></div>
+<label class="kv" for="kv"><input type="checkbox" id="kv"><span>Kişisel verilerimin ön kayıt amacıyla işlenmesine ilişkin aydınlatma metnini okudum.</span></label>
+<p class="er" id="er" hidden></p>
+<button class="btn" type="submit">Ön kaydı gönder</button>
+<p class="ok" id="ok" hidden></p>
+</form>
+</div></section>
+<footer><div class="wrap"><span>© 2009–2026 Minik Yıldızlar Kreş, Gündüz Bakımevi ve Çocuk Kulübü · Gaziantep</span><span>KVKK aydınlatma metni</span></div></footer>
+
+<script>
+(function(){
+// Yayına alırken okulun WhatsApp numarasını yazın (ör. '90xxxxxxxxxx'). Boşken form önizleme modunda çalışır.
+var WHATSAPP='';
+function $(i){return document.getElementById(i)}
+var now=new Date();
+
+// senses
+var S=[['Dokunma','✋','var(--orange-soft)','var(--orange)','Ellerle dünyayı tanımak','Bulgur ve pirinç havuzu','Kepçeyle doldurma, boşaltma, saklı oyuncağı bulma.','Oyun hamuru','Yoğurma, yuvarlama, şekil verme.','Dokunma kutusu','Gözler kapalı: yumuşak mı, sert mi?','İnce motor becerisi, kalem tutmaya hazırlık ve odaklanma.'],
+['Görme','👀','var(--teal-soft)','var(--teal-d)','Renkleri, şekilleri, ışığı fark etmek','Işık masası','Renkli şeffaf parçalarla desen kurma.','Renk eşleştirme','Kapakları, düğmeleri renklerine göre ayırma.','Gölge oyunu','El fenerinin önünde hayvan gölgeleri.','Görsel dikkat, sınıflama ve eşleştirme becerisi.'],
+['İşitme','👂','var(--lilac-soft)','var(--lilac)','Sesleri ayırt etmek ve dinlemek','Ses kutuları','Pirinç mi, nohut mu? Sallayıp dinliyoruz.','Ritim çemberi','Tef ve marakasla birlikte ritim tutma.','Doğa sesleri','Yağmur, rüzgâr ve kuş seslerini tahmin etme.','Dinleme becerisi, dil gelişimi ve sıra bekleme.'],
+['Koklama','👃','var(--green-soft)','var(--green)','Kokuları tanımak ve anlatmak','Koku kavanozları','Tarçın, nane, portakal kabuğu... Hangisi?','Bahçe köşesi','Fesleğen ve nane yetiştirip koklama.','Mutfak saati','Pişen kekin kokusundan tahmin oyunu.','Hafıza, kelime dağarcığı ve merak.'],
+['Tatma','👅','var(--pink-soft)','var(--pink-d)','Tatları keşfetmek, yeni yiyecekleri denemek','Tat tabağı','Tatlı, ekşi, tuzlu: mevsim meyveleriyle.','Birlikte hazırlık','Meyve salatası ve sandviç yapımı.','Sofra sohbeti','Yediğimizi anlatıyoruz: çıtır mı, yumuşak mı?','Seçici yemeyi azaltmaya yardım, öz bakım ve dil gelişimi.']];
+var tb=$('stabs');S.forEach(function(s,i){var b=document.createElement('button');b.type='button';b.className='stab';b.style.setProperty('--b',s[2]);b.style.setProperty('--c',s[3]);b.innerHTML='<i aria-hidden="true"></i><span></span>';b.querySelector('i').textContent=s[1];b.querySelector('span').textContent=s[0];b.onclick=function(){sense(i)};tb.appendChild(b)});
+function sense(i){var s=S[i],c=$('scard');c.style.setProperty('--b',s[2]);c.style.setProperty('--c',s[3]);
+ c.innerHTML='<div class="top"><i aria-hidden="true"></i><div><h3></h3><p class="what"></p></div></div><div class="acts"><div><b></b><span></span></div><div><b></b><span></span></div><div><b></b><span></span></div></div><p class="gain"><b>Ne kazanır?</b> <span></span></p>';
+ c.querySelector('.top i').textContent=s[1];c.querySelector('h3').textContent=s[0];c.querySelector('.what').textContent=s[4];
+ var a=c.querySelectorAll('.acts div');for(var k=0;k<3;k++){a[k].querySelector('b').textContent=s[5+k*2];a[k].querySelector('span').textContent=s[6+k*2]}
+ c.querySelector('.gain span').textContent=s[11];
+ tb.querySelectorAll('.stab').forEach(function(b,j){b.setAttribute('aria-pressed',j===i)})}
+sense(0);
+
+// finder
+var AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
+var bm=$('bm'),by=$('by');
+AY.forEach(function(a,i){var o=document.createElement('option');o.value=i;o.textContent=a;bm.appendChild(o)});
+for(var y=now.getFullYear();y>=now.getFullYear()-12;y--){var o=document.createElement('option');o.value=y;o.textContent=y;by.appendChild(o)}
+var d0=new Date(now.getFullYear(),now.getMonth()-30,1);bm.value=d0.getMonth();by.value=d0.getFullYear();
+var G=[[0,24,'Yıldız Tozları','Kreş','Bebek grubumuz. Evdeki uyku ve beslenme düzenini birlikte sürdürürüz.','var(--teal-d)',0],[25,36,'Pırıltılar','Gündüz bakımevi','Tuvalet eğitimi ve kendi başına yemek yeme dönemi.','var(--orange)',1],[37,48,'Takımyıldızlar','Gündüz bakımevi','Kavramlar, sanat ve drama.','var(--green)',2],[49,66,'Kuyruklu Yıldızlar','Gündüz bakımevi','İlkokula hazırlık programı.','var(--pink-d)',3]];
+function calc(){var m=(now.getFullYear()-(+by.value))*12+(now.getMonth()-(+bm.value));var r=$('res');r.innerHTML='';
+ function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;r.appendChild(e);return e}
+ if(m<0){el('span','big','Bu tarih ileride');el('p',null,'Lütfen doğum ayını ve yılını kontrol edin.');return}
+ el('span','age','Çocuğunuz bugün '+m+' aylık');
+ if(m<3){el('span','big','Biraz erken');el('p',null,'Bebeğinizi birkaç ay sonra tanımak isteriz. Ön kayıt bırakırsanız yer açıldığında size haber verelim.');return}
+ var a;
+ if(m>66){var b=el('span','big','Çocuk Kulübü');b.style.color='var(--lilac)';el('span','type','Okul çağı · okul sonrası');el('p',null,'Okul sonrası ödev desteği, atölyeler ve oyun. Tatillerde de açığız.');a=el('a','btn t','Çocuk kulübü için ön kayıt');a.href='#iletisim';a.onclick=function(){$('cg').selectedIndex=4};return}
+ var g=G.filter(function(x){return m>=x[0]&&m<=x[1]})[0];var b2=el('span','big',g[2]);b2.style.color=g[5];el('span','type',g[3]+' · '+g[0]+'–'+g[1]+' ay');el('p',null,g[4]);
+ a=el('a','btn t',g[2]+' için ön kayıt');a.href='#iletisim';a.onclick=function(){$('cg').selectedIndex=g[6]}}
+bm.onchange=calc;by.onchange=calc;calc();
+
+// day
+var D={bebek:[['07.00','Günaydın!','Sıcak bir karşılama, kısa bir veda.'],['08.30','Kahvaltı','Yaşına uygun kahvaltı ya da mama.'],['09.30','Duyu oyunları','Su, kum, yumuşak dokular ve sesler.'],['10.30','Sabah uykusu','Her bebeğin kendi yatağı ve düzeni.'],['12.00','Öğle yemeği','Ek gıda sürecine uygun ezme ve püreler.'],['13.00','Öğle uykusu','Sessiz ve loş uyku odası.'],['15.30','Kitap ve şarkı','Resimli kitaplar, parmak oyunları.'],['17.00','Eve dönüş','Günün bilgisi veliyle paylaşılır.']],
+buyuk:[['07.00','Günaydın!','Karşılama ve serbest oyun.'],['08.30','Kahvaltı','Masayı birlikte hazırlar, birlikte toplarız.'],['09.15','Çember saati','Hava durumu, takvim, duygular ve günün planı.'],['10.00','Duyusal oyun','Bulgur havuzu, ışık masası, koku kavanozları.'],['11.00','Etkinlik saati','Kavramlar, sayılar ve haftanın teması.'],['12.00','Öğle yemeği','Kendi başına yemeyi öğreniyoruz.'],['12.45','Dinlenme','Uyku ya da sessiz kitap köşesi.'],['14.30','Atölye','Sanat, müzik, drama veya mutfak.'],['16.00','İkindi kahvaltısı','Meyve ve hafif bir ara öğün.'],['17.00','Eve dönüş hazırlığı','Günün değerlendirmesi ve veda şarkısı.']],
+kulup:[['12.30','Okuldan karşılama','Servisle ya da veliyle kulübe geliş.'],['13.00','Öğle yemeği','Sıcak öğle yemeği.'],['13.45','Ödev saati','Öğretmen desteğiyle günün ödevleri.'],['15.00','Atölye','Sanat, oyun, kitap okuma.'],['16.00','İkindi kahvaltısı','Meyve ve hafif bir ara öğün.'],['16.30','Serbest oyun','Arkadaşlarla oyun.'],['18.00','Eve dönüş','Ödev durumu veliyle paylaşılır.']]};
+function day(k){var o=$('tl');o.innerHTML='';D[k].forEach(function(r){var li=document.createElement('li');li.innerHTML='<time class="num"></time><div><b></b><span></span></div>';li.querySelector('time').textContent=r[0];li.querySelector('b').textContent=r[1];li.querySelector('span').textContent=r[2];o.appendChild(li)});document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-pressed',t.dataset.k===k)})}
+document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){day(t.dataset.k)}});day('buyuk');
+
+// menu
+var M=[['Pazartesi','Haşlanmış yumurta, peynir, zeytin, domates','Mercimek çorbası, fırın köfte, bulgur pilavı, yoğurt','Mevsim meyvesi'],['Salı','Omlet, peynir, salatalık','Ezogelin çorbası, zeytinyağlı taze fasulye, ayran','Sütlaç'],['Çarşamba','Peynirli pişi, zeytin, domates','Tavuk sote, pirinç pilavı, cacık','Kuru meyve ve süt'],['Perşembe','Yulaf lapası, muz','Sebze çorbası, etli nohut, şehriyeli pilav','Kek ve süt'],['Cuma','Menemen, peynir, salatalık','Yayla çorbası, fırında sebzeli makarna, yoğurt','Mevsim meyvesi']];
+var mn=$('mn');M.forEach(function(x){var d=document.createElement('div');d.className='md';d.innerHTML='<em></em><div><small>Kahvaltı</small><span></span></div><div><small>Öğle</small><span></span></div><div><small>İkindi</small><span></span></div>';d.querySelector('em').textContent=x[0];var s=d.querySelectorAll('div span');s[0].textContent=x[1];s[1].textContent=x[2];s[2].textContent=x[3];mn.appendChild(d)});
+
+// docs
+var DOCS=['Çocuğun nüfus cüzdanı fotokopisi','Veli kimlik fotokopileri','Aşı kartı fotokopisi','Sağlık raporu (toplu yaşama uygundur)','4 adet vesikalık fotoğraf','Çocuğu teslim alacak kişilerin listesi'];
+var ul=$('docs');DOCS.forEach(function(t,i){var li=document.createElement('li');li.innerHTML='<label for="dk'+i+'"><input type="checkbox" id="dk'+i+'"><span></span></label>';li.querySelector('span').textContent=t;var lb=li.querySelector('label');li.querySelector('input').onchange=function(e){lb.classList.toggle('on',e.target.checked);dc()};ul.appendChild(li)});
+function dc(){var n=document.querySelectorAll('#docs input:checked').length;$('dc').textContent=n===DOCS.length?'Hepsi hazır, görüşmek üzere!':n+' / '+DOCS.length+' hazır'}dc();
+
+// form
+$('f').addEventListener('submit',function(e){e.preventDefault();var er=$('er'),ok=$('ok');er.hidden=true;ok.hidden=true;
+ var pn=$('pn').value.trim(),pt=$('pt').value.trim();
+ if(!pn||pt.replace(/\D/g,'').length<10){er.textContent='Lütfen adınızı ve geçerli bir telefon numarası yazın.';er.hidden=false;(pn?$('pt'):$('pn')).focus();return}
+ if(!$('kv').checked){er.textContent='Devam etmek için aydınlatma metnini onaylayın.';er.hidden=false;$('kv').focus();return}
+ var txt='Merhaba, ön kayıt talebim var.\nVeli: '+pn+'\nTelefon: '+pt+'\nÇocuk: '+($('cn').value.trim()||'-')+' ('+($('cb').value||'doğum tarihi belirtilmedi')+')\nGrup: '+$('cg').value+'\nBaşlangıç: '+$('cd').value+($('nt').value.trim()?'\nNot: '+$('nt').value.trim():'');
+ if(WHATSAPP){var a=document.createElement('a');a.href='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(txt);a.target='_blank';a.rel='noopener';a.className='btn';a.textContent='WhatsApp\'ta gönder';ok.textContent='Bilgileriniz hazır. Göndermek için butona dokunun: ';ok.appendChild(a)}
+ else ok.textContent='Teşekkürler '+pn+'! Bu bir önizlemedir; yayındaki sitede talebiniz okulumuza WhatsApp ile iletilecek.';
+ ok.hidden=false});
+})();
+</script>
+</body></html>
